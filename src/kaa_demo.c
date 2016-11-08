@@ -34,15 +34,51 @@ void kaa_demo_print_configuration_message(
             kaa_configuration_raspberry_pi_t *current_link = kaa_list_get_data(it);
             printf("Device Name : ");printf(current_link->name->data);
             printf("\n");
+            
             printf("Red Color Status : ");
             printf(current_link->red->data);
             printf("\n");
+            
             printf("Green Color Status : ");
             printf(current_link->green->data);
             printf("\n");
+
             printf("Blue Color Status : ");
             printf(current_link->blue->data);
             printf("\n");
+            
+            //Turn on
+            if(strcmp(current_link->red->data, "ON") == 0)
+            {
+                system("python GPIORedOn.py");
+            }
+            
+            if(strcmp(current_link->green->data, "ON") == 0)
+            {
+                system("python GPIOGreenOn.py");
+            }
+            
+            if(strcmp(current_link->blue->data, "ON") == 0)
+            {
+                system("python GPIOBlueOn.py");
+            }
+            
+            //Turn off
+            if(strcmp(current_link->red->data, "OFF") == 0)
+            {
+                system("python GPIORedOff.py");
+            }
+            
+            if(strcmp(current_link->green->data, "OFF") == 0)
+            {
+                system("python GPIOGreenOff.py");
+            }
+            
+            if(strcmp(current_link->blue->data, "OFF") == 0)
+            {
+                system("python GPIOBlueOff.py");
+            }
+            
             it = kaa_list_next(it);
         }
     } else {
