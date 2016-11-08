@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=gnu99 -g -Wall -Wextra -g   CMakeFiles/demo_client.dir/src/kaa_demo.c.o  -o demo_client -rdynamic libs/kaa/libkaac_s.a -lssl -lcrypto 

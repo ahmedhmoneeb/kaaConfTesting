@@ -1,0 +1,4 @@
+/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingConf/build/CMakeFiles/demo_client.dir
+/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingConf/build/libs/kaa/CMakeFiles/kaac_o.dir
+/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingConf/build/libs/kaa/CMakeFiles/kaac_s.dir
+/home/ahmedmoneeb/Downloads/kaa/TestingCluster/TestingConf/build/libs/kaa/CMakeFiles/kaac.dir
